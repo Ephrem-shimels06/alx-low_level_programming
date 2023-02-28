@@ -1,15 +1,14 @@
 #include<stdio.h>
 
 /**
+ *_puts - prints string
  *
- * _puts - prints string
+ *@str: parameter 
  *
- * @str: parameter 
- *
- * Return: nothing
+ *Return: nothing
  * 
  */
 void _puts(char *str)
 {
-	printf("%s",str);
+	printf("%s\n", str);
 }
