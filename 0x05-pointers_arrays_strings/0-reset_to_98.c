@@ -1,7 +1,7 @@
 /**
- * reset_to_98.c - update the value of n ot 98
+ * reset_to_98 - update the value of n to 98
  *
- * n - a  parameter pointer  variable that the function acceptes
+ *@n:a  parameter pointer  variable that the function acceptes
  *
  * Return: nothing
  */
