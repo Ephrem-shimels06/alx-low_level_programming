@@ -12,7 +12,8 @@
 void rev_string(char *s)
 {
 	int index = 0;
-	char s1[strlen(s)];
+	int size = strlen(s);
+	char s1[size];
 	int i = strlen(s) - 1;
 	long unsigned j = 0;
 
