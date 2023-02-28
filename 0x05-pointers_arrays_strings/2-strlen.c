@@ -5,10 +5,6 @@
  *
  *@s:pointer to the string
  *
- *@l:store length
- *
- *@i:for iteration
- *
  *Return: int
  */
 int _strlen(char *s)
@@ -22,5 +18,5 @@ int _strlen(char *s)
 		i += 1;
 	}
 	
-	return l;
+	return (l);
 }
