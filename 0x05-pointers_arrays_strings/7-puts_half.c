@@ -11,8 +11,8 @@
 
 void puts_half(char *str)
 {
-	int i = strlen(s) / 2;
-	int j = (strlen(s) - 1) / 2 ;
+	int i = strlen(str) / 2;
+	long unsigned j = (strlen(str) - 1) / 2 ;
 	if (strlen(str) % 2 == 0)
 	{
 		for (;i < strlen(s) ; i++)
