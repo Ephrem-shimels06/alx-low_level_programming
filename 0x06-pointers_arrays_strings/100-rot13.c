@@ -17,14 +17,14 @@ char *rot13(char *str)
 	{
 		for(j = 0; letters[j] != '\0'; j++)
 		{
-			if ( str[i] == letters[j] && s[i] - 65 > 25)
+			if ( str[i] == letters[j] && str[i] - 65 > 25)
 			{
-				s[i] =  stores[s[i] - 97];
+				str[i] =  stores[str[i] - 97];
 			}
-			s[i] = storec[s[i] - 65];
+			str[i] = storec[str[i] - 65];
 		}
 	}
-	return (s);
+	return (str);
 
 }
 
