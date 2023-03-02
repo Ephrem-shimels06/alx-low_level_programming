@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src, int n)
 	for(;i < n && k < 98; i++)
 	{
 		dest[i] = src[i];
-		k++
+		k++;
 	}
 	return (dest);
 }
