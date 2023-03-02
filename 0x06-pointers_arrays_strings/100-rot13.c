@@ -9,6 +9,7 @@
 char *rot13(char *str)
 {
 	int i;
+	int j;
 	char storec[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
 	char stores[] = "nopqrstuvwxyzabcdefghijklm";
 	char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRSTUVWQYZ";
@@ -21,7 +22,7 @@ char *rot13(char *str)
 			{
 				str[i] =  stores[str[i] - 97];
 			}
-			str[i] = storec[str[i] - 65];
+			/*str[i] = storec[str[i] - 65];*/
 		}
 	}
 	return (str);
