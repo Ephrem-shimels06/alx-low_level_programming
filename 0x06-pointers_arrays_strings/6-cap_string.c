@@ -13,7 +13,7 @@ char *cap_string(char *str)
 	int indicator = 0;
 	char sep[] = ",;.!?()\n\t\"";
 
-	for(; ;str[i] != '\0'; i++)
+	for(;str[i] != '\0'; i++)
 	{
 		if(str[0] > 96 && str[0] < 123)
 			indicator = 1;
