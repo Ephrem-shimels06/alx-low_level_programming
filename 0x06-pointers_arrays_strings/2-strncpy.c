@@ -1,5 +1,6 @@
 #include "main.h"
 #include<stdio.h>
+#include<string.h>
 
 /**
  *_strncpy - copy specified number of characters form one string to another
@@ -14,7 +15,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int i = 0;
 	int k = 0;
 	
-	for(;i < n && k < 98 && src[k] != '\0'; i++)
+	for(;i < n && k < strlen(dest) && src[k] != '\0'; i++)
 	{
 		dest[i] = src[i];
 		k++;
