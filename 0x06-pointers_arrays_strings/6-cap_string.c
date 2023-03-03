@@ -2,40 +2,37 @@
 
 /**
  * cap_string - changes every word in a string to capital
- * @str: string
+ * @s: string
  * Retrun: str
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int i = 0;
-	int j = 0;
-	int indicator = 0;
-	char sep[] = ",;.!?()\n\t\"";
+	int i;
 
-	for(;str[i] != '\0'; i++)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		if(str[0] > 96 && str[0] < 123)
-			indicator = 1;
-		for(; sep[j] != '\0'; j++)
+		if ((s[i - 1] == ' ' || s[i - 1] == '\n'
+		|| s[i - 1] == '\t' || s[i - 1] == ','
+		|| s[i - 1] == ';' || s[i - 1] == '!'
+		|| s[i - 1] == '?' || s[i - 1] == '"'
+		|| s[i - 1] == '(' || s[i - 1] == ')'
+		|| s[i - 1] == '{' || s[i - 1] == '}'
+		|| s[i - 1] == '.')
+		&& (s[i] >= 'a' && s[i] <= 'z'))
 		{
-			if(sep[j] == str[i])
-				indicator = 1;
+			s[i] = s[i] - 32;
 		}
-		if (indicator)
+		else if ((s[0] >= 97 && s[0] <= 122))
 		{
-			if(str[i] > 96 && str[i] < 123)
-			{
-				str[i] -= 32;
-				indicator = 0;
-			}
-			else if (str[i] > 64 && str[i] < 91)
-				indicator = 0;
-			
-			else if (str[i] > 47 && str[i] < 58)
-				indicator = 0;
+			s[0] = s[0] - 32;
 		}
+		else
+		{
+			s[i] = s[i];
+		}
+		i++;
 	}
-	return (str);
+	return (s);
 }
-
