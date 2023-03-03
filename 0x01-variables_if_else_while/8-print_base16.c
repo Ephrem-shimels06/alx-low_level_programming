@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char hexa[] = "123456789abcdef";
+	char hexa[] = {'1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
 	int i;
 
-	for (i = 0; hexa[i] != '\0'; i++)
+	for (i = 0; i < 15; i++)
 	{
-		putchar(i);
+		putchar(hexa[i]);
 	}
 	putchar('\n');
 	return (0);
