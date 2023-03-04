@@ -3,7 +3,6 @@
 /**
  *swap_int - function that swap the value of two variables
  *
- *@temp: temporary variable
  *
  * @a : parameter1
  *
