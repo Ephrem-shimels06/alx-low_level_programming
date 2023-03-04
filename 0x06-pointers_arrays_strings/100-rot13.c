@@ -2,30 +2,27 @@
 
 /**
  * rot13 - encodes a sentence
- * @str: given string
+ * @s: given string
  * Return: string
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int i;
-	int j;
-	char storec[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char stores[] = "nopqrstuvwxyzabcdefghijklm";
-	char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
-		for(j = 0; letters[j] != '\0'; j++)
+		while ((s[i] >= 'a' && s[i] <= 'z') ||
+				(s[i] >= 'A' && s[i] <= 'Z'))
 		{
-			if ( str[i] == letters[j] && str[i] - 65 > 25)
-			{
-				str[i] =  stores[str[i] - 97];
-			}
-			str[i] = storec[str[i] - 65];
+			if ((s[i] >= 'a' && s[i] <= 'm') ||
+					(s[i] >= 'A' && s[i] <= 'M'))
+				s[i] += 13;
+			else
+				s[i] -= 13;
+			i++;
 		}
+		i++;
 	}
-	return (str);
-
+	return (s);
 }
-
