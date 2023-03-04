@@ -11,19 +11,17 @@
 
 void rev_string(char *s)
 {
-	int index = 0;
-        char *s1 = s;
-	int i = strlen(s) - 1;
-	long unsigned j = 0;
+	int i;
+	int j = strlen(s) - 1;
+	int mid = strlen(s) / 2;
+	char temp;
 
-	for(; i >= 0; i--)
+	for (i = 0; i < mid; i++)
 	{
-		s1[index] = s[i];
-		index += 1;
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
+		j--;
 	}
 
-	for(; j < strlen(s1) - 1; j++)
-	{
-		s[j] = s1[j];
-	}
 }
