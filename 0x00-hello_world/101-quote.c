@@ -2,7 +2,7 @@
 
 /**
 * main - It prints the sentence stored at a variable strr
-*Retrun: retruns 1
+* Return:  1
 */
 
 int main(void)
