@@ -3,11 +3,10 @@
 /**
  *_puts - prints string
  *
- *@str: parameter 
- *
+ *@str: parameter
  *Return: nothing
- * 
  */
+
 void _puts(char *str)
 {
 	printf("%s\n", str);
