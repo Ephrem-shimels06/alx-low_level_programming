@@ -6,7 +6,7 @@
  */
 
 int main(void)
-{    
+{
 printf("Size of a char: ");
 printf("%d", sizeof(char));
 printf(" byte(s)\n");
@@ -26,5 +26,5 @@ printf(" byte(s)\n");
 printf("Size of a float: ");
 printf("%d", sizeof(float));
 printf(" byte(s)\n");
-return 0;
+return (0);
 }
