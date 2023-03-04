@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 #include "main.h"
+
 /**
  *_strncat - concatenate strings only n characters
  *
@@ -13,13 +14,14 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int k = 0;
-	for (;dest[i] != '\0' ; i++);
 
-	for (;k < n; k++)
+	for (; dest[i] != '\0' ; i++)
+		;
+
+	for (; k < n && dest[i] != '\0'; k++)
 	{
 		dest[i] = src[k];
 		i++;
 	}
-	
-	return (dest);
+        return (dest);
 }
