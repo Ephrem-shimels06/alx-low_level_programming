@@ -18,7 +18,7 @@ char *rot13(char *s)
 	{
 		for (j = 0; letters[j] = '\0'; j++)
 		{
-			if (s[i] - 65 > 25)
+			if (s[i] - 65 > 25 && s[i] == letters[j])
 			{
 				s[i] = storel[s[i] - 97];
 			}
