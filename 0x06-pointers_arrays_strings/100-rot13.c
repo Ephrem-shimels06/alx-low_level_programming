@@ -20,9 +20,9 @@ char *rot13(char *s)
 		{
 			if (s[i] - 65 > 25)
 			{
-				storel[s[i] - 97];
+				s[i] = storel[s[i] - 97];
 			}
-			storeh[s[i] - 65];
+		      s[i] = storeh[s[i] - 65];
 		}
 	}
 	return (s);
