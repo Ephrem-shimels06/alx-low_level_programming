@@ -4,7 +4,6 @@
 
 /**
  * main - print sentence based on last digit of random number
- * 
  * Return: 0
  */
 int main(void)
