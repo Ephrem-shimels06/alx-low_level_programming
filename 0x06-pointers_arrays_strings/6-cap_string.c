@@ -3,7 +3,7 @@
 /**
  * cap_string - changes every word in a string to capital
  * @s: string
- * Retrun: str
+ * Return: str
  */
 
 char *cap_string(char *s)
