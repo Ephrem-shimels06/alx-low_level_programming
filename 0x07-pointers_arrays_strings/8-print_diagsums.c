@@ -19,5 +19,5 @@ void print_diagsums(int *a, int size)
 		left += *(a +(size * i + i));
 		right += *(a +(size * i + size - 1 - i));
 	}
-	printf("%d, %d", left, right);
+	printf("%d, %d\n", left, right);
 }
