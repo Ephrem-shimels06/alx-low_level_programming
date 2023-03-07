@@ -4,6 +4,7 @@
  * _memset - fills memory with a constant byte
  * @s: a string where a new byte place on
  * @b: a new which going to be put on 's'
+ * @n: the number of bytes to be filled
  * Return: a pointer
  */
 
