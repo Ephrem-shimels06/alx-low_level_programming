@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * sqrtt - finds square root of a number
  * @n: number 
@@ -18,7 +19,7 @@ else if (j * j == n)
 {
 return (j);
 }
-return (sqrtt(n,j + 1));
+return (sqrtt(n, j + 1));
 }
 
 /**
@@ -28,5 +29,5 @@ return (sqrtt(n,j + 1));
  */
 int _sqrt_recursion(int n)
 {
-return sqrtt(n,1);
+return (sqrtt(n, 1));
 }
