@@ -20,6 +20,7 @@ int checker(int n, int i)
 		return (1);
 	}
 	return (checker(n,i + 1));
+}
 
 /**
  *is_prime_number - checks whether a number is prime or not
