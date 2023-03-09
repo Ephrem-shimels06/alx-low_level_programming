@@ -20,10 +20,7 @@ int sqrtt(int n, int j)
         }
         return (sqrtt(n,j + 1));
 }
-int _sqrt_recursion(int n)
-{
-        return sqrtt(n,1);
-}
+
 /**
  *_sqrt_recursion - finds the natural square root of a number
  *@n: number whose square root is going to find
