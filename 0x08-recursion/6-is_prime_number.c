@@ -26,6 +26,7 @@ int checker(int n, int i)
  * @n: number tobe checked
  * Return: either 0 or 1;
  */
+
 int is_prime_number(int n)
 {
 	return (checker(n,2));
