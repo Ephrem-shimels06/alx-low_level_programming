@@ -5,7 +5,6 @@
  * @n: number to be cheked
  * @i: factors
  * Return: integer:wq
- * 
  */
 
 int checker(int n, int i)
