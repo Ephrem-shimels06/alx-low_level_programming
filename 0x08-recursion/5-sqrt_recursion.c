@@ -2,8 +2,8 @@
 
 /**
  * sqrtt - finds square root of a number
- * @n: number 
- * @j: numbers less thatn n
+ * @n: number
+ *@j: numbers less thatn n
  * Return: integer
  */
 
