@@ -9,17 +9,21 @@
  * Return: always 1
  */
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-	if (argc > 1)
-	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-	}
-	else
+	int num1, num2, prod;
+
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	return (1);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	prod = num1 * num2;
+
+	printf("%d\n", prod);
+
+	return (0);
 }
