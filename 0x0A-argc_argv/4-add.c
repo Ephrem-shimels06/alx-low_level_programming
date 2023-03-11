@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < argc; i++)
 		{
-			if (*argv[i] >= '0' || *argv[i] <= '10')
+			if (*argv[i] >= 0 || *argv[i] <= 10)
 			{
 				sum += *argv[i];
 			}
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%d\n", sum);
+		printf("%d\n",atoi(sum));
 	}
 	else
 	{
