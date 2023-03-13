@@ -12,7 +12,7 @@ char *_strdup(char *str)
 {
 	char *cpy;
 
-	cpy = malloc(strlen(str) + 1 );
+	cpy = malloc(strlen(str) + 1);
 	if (cpy != NULL)
 	{
 		cpy = str;
