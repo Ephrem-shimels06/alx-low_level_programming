@@ -14,33 +14,42 @@ char *str_concat(char *s1, char *s2)
 	char *con;
 	unsigned long int i;
 	unsigned long int j;
+	
 
 	con = malloc(strlen(s1) + strlen(s2));
-	if (s2 == NULL)
+	if (con != NULL)
 	{
-		for (i = 0; i < strlen(s1); i++)
+		if (s2 == NULL)
 		{
-			con[i] = s1[i];
-		}	
-	}
-	else if (s1 == NULL)
-	{
-		for (j = 0; j < strlen(s2); j++)
-	{
-		con[j] = s2[j];
-	}
-	}
-	else 
-	{
-		for (i = 0; i < strlen(s1); i++)
-		{
-			con[i] = s1[i];
+			for (i = 0; i < strlen(s1); i++)
+			{
+				con[i] = s1[i];
+			}
 		}
-		for  (j = 0; j < strlen(s2); j++)
+		else if (s1 == NULL)
 		{
-			con[i] = s2[j];
-			i++;
+			for (j = 0; j < strlen(s2); j++)
+			{
+				con[j] = s2[j];
+			}
 		}
+		else if (s1 == NULL && s2 == NULL)
+		{
+			return (con);
+		}
+		else 
+		{
+			for (i = 0; i < strlen(s1); i++)
+			{
+				con[i] = s1[i];
+			}
+			for  (j = 0; j < strlen(s2); j++)
+			{
+				con[i] = s2[j];
+				i++;
+			}
+		}
+		return (con);
 	}
 	return (con);
 }
