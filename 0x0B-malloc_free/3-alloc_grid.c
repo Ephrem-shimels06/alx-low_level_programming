@@ -6,7 +6,7 @@
  * alloc_grid - create two dimensional array of integers
  * @width: number of columns
  * @height: number of rows
- * Retrun: pointer to the 2D array
+ * Return: pointer to the 2D array
  */
 
 int **alloc_grid(int width, int height)
@@ -24,11 +24,11 @@ int **alloc_grid(int width, int height)
 
 	for (j = 0; j < height; j++)
 	{
-		arr[j] = malloc(width);
+		arr[j] = malloc(width * sizeof(int *));
 
-		if (arr == NULL)
+		if (arr[j] == NULL)
 		{
-			for(j--; j > 0; j--)
+			for (j--; j > 0; j--)
 			{
 				free(arr[j]);
 			}
