@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			return (con);
 		}
-		else 
+		else
 		{
 			for (i = 0; i < strlen(s1); i++)
 			{
